@@ -17,22 +17,26 @@ This project is a RESTful API built with FastAPI for managing a book collection.
 
 ```
 fastapi-book-project/
-├── api/
-│   ├── db/
-│   │   ├── __init__.py
-│   │   └── schemas.py      # Data models and in-memory database
-│   ├── routes/
-│   │   ├── __init__.py
-│   │   └── books.py        # Book route handlers
-│   └── router.py           # API router configuration
+├── api
+│ ├── db/
+│ │ ├── init.py
+│ │ └── schemas.py # Data models and in-memory database
+│ ├── routes/
+│ │ ├── init.py
+│ │ └── books.py # Book route handlers
+│ └── router.py # API router configuration
 ├── core/
-│   ├── __init__.py
-│   └── config.py           # Application settings
+│ ├── init.py
+│ └── config.py # Application settings
 ├── tests/
-│   ├── __init__.py
-│   └── test_books.py       # API endpoint tests
-├── main.py                 # Application entry point
-├── requirements.txt        # Project dependencies
+│ ├── init.py
+│ └── test_books.py # API endpoint tests
+├── main.py # Application entry point
+├── requirements.txt # Project dependencies
+├── .github/workflows/ # CI/CD pipeline configurations
+│ ├── ci.yml # Continuous Integration workflow
+│ └── cd.yml # Continuous Deployment workflow
+├── nginx.conf # Nginx reverse proxy configuration
 └── README.md
 ```
 
@@ -43,6 +47,8 @@ fastapi-book-project/
 - Pydantic
 - pytest
 - uvicorn
+- Nginx
+- GitHub Actions (CI/CD)
 
 ## Installation
 
